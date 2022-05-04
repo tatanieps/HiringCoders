@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c0f3e6e29e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"         crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Talita Nieps</title>
+</head>
+
+<body>
+<header>
+
+<div id="flexlinks">
+<ul>
+    <Li><i class="fa-brands fa-github"></i> <a target="blank"  href="https://github.com/tatanieps"> Meu Github </a></Li>
+    <Li><i class="fa-brands fa-linkedin"></i><a target="blank"  href="https://linkedin.com/in/talitanieps"> Meu perfil no LinkedIn</a> </a></Li>
+    <Li><i class="fa-brands fa-yahoo"></i><a target="blank" href="mailto:talita.nieps@yahoo.com.br"> Me mande um email!</a></Li>
+    <Li><i class="fa-brands fa-whatsapp"></i></i> <a target="blank" href="https://wa.me/19991027188"> Me liga!</a> </Li>
+    </div>
+
+</ul>
+</header>
+
+    <main>
+    
+
+        <section class="container">
+            <div class="nome">
+                <h1>Talita Nieps</h1><br>
+                <h5>Cientista de Dados em Formação!</h5>
+            </div>
+
+                <div onclick="displayAbout()"" id="arrow">
+                    <i id="animation" class="fa-solid fa-circle-arrow-down"></i>              
+                </div>
+
+                <br>
+                
+                <div class="flex">
+                    <div style="display: none", id="listaSkills">
+                        
+                    <p> Nesses 10 anos de carreira em TI, 7 deles foram trabalhando com redes/telecomunicações; hoje estou em transição de carreira para desenvolvimento/ciência de dados!
+                        Ganhei muita experiência como Analista de Suporte de Redes (+5 anos de experiência), e eu tive outro ano incrível como Técnica de Data Center, onde pude ver de perto como tudo acontece no backstage (da perspectiva de Hardware, no caso).
+                        Agora caminho em direção a desenvolvimento/ciência de dados, o que era minha inteção desde o começo, na faculdade. Como falei, eu sempre quis trabalhar com desenvolvimento, mas a vida me mostrou outros caminhos, que foram tão incríveis o quanto programação talvez teria sido.<br><br>
+                        Adaptabilidade e vontade de aprender são ferramentas importantes para o profissional de TI!
+                        Atualmente estou estudando:<br><br>
+
+                        <li>Desenvolvimento Full Stack, parte do programa Hiring Coders;</li><br>
+                        <li>Ciência de Dados, com a VAI Academy. </li></p>
+                          </div>
+                </div>
+
+                <div class="form">
+                        <p> Deixe seu contato!</p>
+                        <input type="text" placeholder="Seu melhor email aqui! :)">
+                        <button>enviar!</button>
+                </div>
+
+
+        </section>
+
+    </main>
+    <script>
+        function displayAbout(){
+            var arrow =document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('listaSkills');
+            listaSkills.classList.toggle('active')
+        }
+    </script>
+    
+</body>
+
+</html>
